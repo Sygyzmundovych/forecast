@@ -67,6 +67,11 @@
 			"cozy": true
 		},
 		"models": {
+			"apl_forecast": {
+				"type": "sap.ui.model.json.JSONModel",
+				"preload": true,
+				"uri": "model/algorithms/apl/forecast.json"
+			},
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
@@ -113,12 +118,20 @@
 				"name": "home",
 				"pattern": "",
 				"target": "demo"
+			}, {
+				"name": "forecast",
+				"pattern": "forecast",
+				"target": "forecast"
 			}],
 			"targets": {
 				"demo": {
 					"clearAggregation": true,
 					"viewName": "demo",
 					"viewLevel": 1
+				},
+				"forecast": {
+					"clearAggregation": true,
+					"viewName": "algorithms.apl.forecast"
 				}
 			}
 		}
