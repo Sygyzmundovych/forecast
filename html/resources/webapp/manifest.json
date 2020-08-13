@@ -77,6 +77,11 @@
 				"preload": true,
 				"uri": "model/algorithms/pal/auto_arima.json"
 			},
+			"pal_auto_smoothing": {
+				"type": "sap.ui.model.json.JSONModel",
+				"preload": true,
+				"uri": "model/algorithms/pal/auto_smoothing.json"
+			},
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
@@ -131,6 +136,10 @@
 				"name": "auto_arima",
 				"pattern": "auto_arima",
 				"target": "auto_arima"
+			}, {
+				"name": "auto_smoothing",
+				"pattern": "auto_smoothing",
+				"target": "auto_smoothing"
 			}],
 			"targets": {
 				"demo": {
@@ -145,6 +154,10 @@
 				"auto_arima": {
 					"clearAggregation": true,
 					"viewName": "algorithms.pal.auto_arima"
+				},
+				"auto_smoothing": {
+					"clearAggregation": true,
+					"viewName": "algorithms.pal.auto_smoothing"
 				}
 			}
 		}
